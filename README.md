@@ -1,2 +1,2 @@
 # TAssistant
-Programa para asistencia a monitores de la materia Introducción a la Programación Uniandes
+Programa para asistencia a monitores del curso Introducción a la Programación en la Universidad de los Andes.
