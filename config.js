@@ -1,0 +1,1 @@
+let BASE_DIR = '';

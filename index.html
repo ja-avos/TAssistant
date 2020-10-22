@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TAssistant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container-fluid" id="backDiv">
+      <div class="container-fluid" id="mainBlock">
+        <h1 class="display-4">TAssistant</h1>
+        <p id="descP">Bienvenido a la herramienta para ayudar a los monitores de Introducción a la Programación 2020-10, Uniandes.</p>
+        <button type="button" class="btn btn-outline-secondary" onclick="redirect()">Entrar</button>
+        <div class="d-flex justify-content-center" id="loadingSpinner">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function redirect(){
+        var spin = document.getElementById("loadingSpinner");
+        spin.style["margin-bottom"] = "1rem";
+        spin.style.height = "auto";
+        spin.style.visibility = "visible";
+        window.location.href = 'https://uniandespiloto.brightspace.com';
+      }
+    </script>
+  </body>
+</html>

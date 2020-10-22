@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TAssistant - Activities</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="courses.css">
+  </head>
+  <body>
+    <div class="container-fluid" id="backDiv">
+      <div class="container-fluid" id="mainBlock">
+        <h1 class="display-4">Cursos</h1>
+        <div class="btn-group-vertical" id="btnGroup">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function setCourses(){
+        var parameters = location.search.substring(1).split("&");
+        for(i = 0; i < parameters.length; i++){
+            var temp = parameters[i].split("=");
+            var name = unescape(temp[0]);
+            console.log(name)
+            name = name.replace('Ã', 'Ó')
+            name = name.replace('Ã', 'Ó')
+            var link = unescape(temp[1]);
+            document.getElementById('btnGroup').innerHTML += "<button onclick=\"window.location.href = 'https://uniandespiloto.brightspace.com/d2l/lms/dropbox/admin/folders_manage.d2l?ou=" + link + "';\">"+name+"</button>"
+        }
+    }
+    setCourses();
+</script>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "tassistant",
+  "version": "1.0.0",
+  "description": "Program to help teaching assistants of ISIS1221-Uniandes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Juan Andrés Avelino Ospina",
+  "license": "ISC",
+  "dependencies": {
+    "7zip-bin": "^5.0.3",
+    "jsdom": "^16.2.2",
+    "node-7z": "^2.1.1",
+    "unzip": "^0.1.11",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "mv": "^2.1.1",
+    "node-unrar": "^0.1.5",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3",
+    "unrar": "^0.2.0",
+    "unrar-promise": "^2.0.1"
+  }
+}

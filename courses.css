@@ -1,0 +1,59 @@
+#backDiv {
+    width: 100%;
+    height: 100%;
+    background-color:  darkgray;
+}
+
+#mainBlock {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 200px;
+    width: 50vw;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+#mainBlock h1{
+    margin-top: 4vh;
+    font-size: 7vw;
+}
+
+#mainBlock #descP{
+    font-size: 1.5vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainBlock .btn-group-vertical{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    width: 100%;
+}
+
+.btn-group-vertical button {
+    background-color: white; /* Green background */
+    border: 1px solid white; /* Green border */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; 
+    display: block; /* Make the buttons appear below each other */
+  }
+  
+  .btn-group-vertical button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group-vertical button:hover {
+    background-color: lightgray;
+  }
+    
